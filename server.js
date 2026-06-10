@@ -108,4 +108,4 @@ const requestListen = (req,res) =>{
 }
 
 const server = http.createServer(requestListen)
-server.listen(3008)
+server.listen(process.env.PORT||3008)
